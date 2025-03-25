@@ -1,6 +1,9 @@
+
+let video
 function preload() {
   // put preload code here
 }
+videoMar = createVideo('.videos/videoMar.mp4')
 
 function setup() {
   // put setup code here
@@ -13,5 +16,9 @@ function draw() {
   rotateX(frameCount * 0.01)
   rotateY(frameCount * 0.01)
   rotateZ(frameCount * 0.01)
-  box(150)
+  texture(videoMar)
+  box(400)
+}
+function mousePressed() {
+    videoMar.loop()
 }
