@@ -2,8 +2,9 @@
 let videoMar
 function preload() {
   // put preload code here
+  videoMar = createVideo('./videos/videoMar.mp4')
+  videoMar.hide()
 }
-videoMar = createVideo('./videos/videoMar.mp4')
 
 function setup() {
   // put setup code here
